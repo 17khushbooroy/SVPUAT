@@ -17,6 +17,7 @@ import {
   CardContent,
 } from "@/components/ui/card";
 import { useState, useEffect } from "react";
+import img from "@/public/1.jpg";
 
 const stats = [
   { name: "Digital Resources", value: "100,000+", icon: Library },
@@ -98,7 +99,7 @@ export default function Home() {
                 <Button
                   size="lg"
                   variant="outline"
-                  className="rounded-full border-white/20 text-white hover:bg-white/10"
+                  className="rounded-full border-white/20 text-black dark:text-white hover:bg-white/10"
                 >
                   Learn More
                 </Button>
@@ -135,7 +136,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="relative h-[400px] rounded-2xl overflow-hidden">
               <Image
-                src="https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=2662"
+                src={img}
                 alt="University Campus"
                 fill
                 className="object-cover"
@@ -157,6 +158,155 @@ export default function Home() {
               </p>
               <Button className="rounded-full">Learn More About Us</Button>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Library Details Section */}
+      <section className="py-20 bg-muted">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold mb-8 text-center">
+              About Our Library
+            </h2>
+
+            {/* History and Building Info */}
+            <div className="prose prose-lg dark:prose-invert max-w-none mb-12">
+              <p className="text-muted-foreground">
+                Central Library building of Sardar Vallabhbhai Patel University
+                of Agriculture & Technology, Meerut was inaugurated by Hon'ble
+                Chief Minister, Shri Yogi Aadityanath and agriculture minister
+                of Uttar Pradesh on 13 January, 2021. The Library building of
+                SVPUA&T, Meerut is G+1 type. It is being constructed in 5179.85
+                sqm (GFArea 2775 sqm+First Floor 2404.85sqm) area.
+              </p>
+            </div>
+
+            {/* Facilities Grid */}
+            <div className="grid md:grid-cols-2 gap-8 mb-12">
+              <Card>
+                <CardHeader>
+                  <CardTitle>Ground Floor Facilities</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <ul className="list-disc pl-5 space-y-2 text-muted-foreground">
+                    <li>Entrance Fire & Clock room</li>
+                    <li>Issue Counter</li>
+                    <li>Printing/Classification room</li>
+                    <li>Book Binding</li>
+                    <li>Administration room</li>
+                    <li>Central Auditorium</li>
+                    <li>Technical Section/Photocopy/Office</li>
+                    <li>Conference room</li>
+                    <li>Periodical section</li>
+                    <li>Reference Books</li>
+                    <li>Reading room</li>
+                    <li>E-Library sections</li>
+                  </ul>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardHeader>
+                  <CardTitle>First Floor Facilities</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <ul className="list-disc pl-5 space-y-2 text-muted-foreground">
+                    <li>Textbook lawn</li>
+                    <li>Reading rooms</li>
+                    <li>Special Reading room</li>
+                    <li>Group study room</li>
+                    <li>Group discussion room</li>
+                    <li>Seminar room</li>
+                  </ul>
+                </CardContent>
+              </Card>
+            </div>
+
+            {/* Collection Statistics */}
+            <Card className="mb-12">
+              <CardHeader>
+                <CardTitle>Library Collection</CardTitle>
+                <CardDescription>
+                  More than one Lakh Books/Periodicals capacity
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-3 gap-8">
+                  <div>
+                    <h4 className="font-semibold mb-3">Books (12,827 Total)</h4>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li>Text Books: 7,703</li>
+                      <li>Reference Books: 4,248</li>
+                      <li>SC-SP Sub Plane: 164</li>
+                      <li>Gifted Books: 712</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold mb-3">
+                      Journals (2,623 Total)
+                    </h4>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li>International: 658 (47 titles)</li>
+                      <li>National: 679 (52 titles)</li>
+                      <li>Gifted Journals: 1,286</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold mb-3">Thesis (1,242 Total)</h4>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li>PhD: 326</li>
+                      <li>MSc: 749</li>
+                      <li>M.Tech: 147</li>
+                      <li>M.VSc.: 20</li>
+                      <li>B.Tech Projects: 146</li>
+                    </ul>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Student Facilities */}
+            <Card>
+              <CardHeader>
+                <CardTitle>Student Facilities & Timings</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <ul className="space-y-3 text-muted-foreground">
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary">•</span>
+                    Photocopying Facility @ Rs.0.75/- per page
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary">•</span>
+                    E-learning with 13 computers
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary">•</span>
+                    Access to 58,817 journals through CeRA (Consortium for
+                    e-Resources in Agriculture)
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary">•</span>
+                    Centrally Air Conditioned with 24-hour Power Backup
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary">•</span>
+                    Free Wi-Fi facility for University students
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary">•</span>
+                    <div>
+                      <strong>Library Hours:</strong>
+                      <br />
+                      Regular Days: 24 hours
+                      <br />
+                      Holidays: 07:00 AM to 03:00 PM
+                    </div>
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
