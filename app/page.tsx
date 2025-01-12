@@ -18,6 +18,7 @@ import {
 } from "@/components/ui/card";
 import { useState, useEffect } from "react";
 import img from "@/public/1.jpg";
+import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 
 const stats = [
   { name: "Digital Resources", value: "100,000+", icon: Library },
@@ -58,6 +59,114 @@ const digitalResources = [
   },
 ];
 
+const galleryImages = [
+  {
+    src: "/1.jpg",
+    alt: "Library Building Front View",
+    caption: "",
+    width: 800,
+    height: 600,
+  },
+  {
+    src: "/BKB_4321.JPG",
+    alt: "Library Interior",
+    caption: "SVPUAT Library Main Building",
+    width: 800,
+    height: 600,
+  },
+  {
+    src: "/BKB_4458.JPG",
+    alt: "Library Section",
+    caption: "",
+    width: 800,
+    height: 600,
+  },
+  {
+    src: "/BKB_4474.JPG",
+    alt: "Study Area",
+    caption: "",
+    width: 800,
+    height: 600,
+  },
+  {
+    src: "/BKB_4479.JPG",
+    alt: "Library Resources",
+    caption: "",
+    width: 800,
+    height: 600,
+  },
+  {
+    src: "/BKB_4506.JPG",
+    alt: "Reading Room",
+    caption: "",
+    width: 800,
+    height: 600,
+  },
+  {
+    src: "/LMN_7627.JPG",
+    alt: "Digital Section",
+    caption: "Digital Resource Center",
+    width: 800,
+    height: 600,
+  },
+  {
+    src: "/LMN_7632.JPG",
+    alt: "Study Space",
+    caption: "Quiet Study Area",
+    width: 800,
+    height: 600,
+  },
+  {
+    src: "/LMN_7633.JPG",
+    alt: "Library Collection",
+    caption: "Book Collection",
+    width: 800,
+    height: 600,
+  },
+  {
+    src: "/LMN_7644.JPG",
+    alt: "Research Section",
+    caption: "Research Reference Area",
+    width: 800,
+    height: 600,
+  },
+  {
+    src: "/LMN_7649.JPG",
+    alt: "Library Interior",
+    caption: "Modern Library Facilities",
+    width: 800,
+    height: 600,
+  },
+  {
+    src: "/LMN_7703.JPG",
+    alt: "Study Environment",
+    caption: "",
+    width: 800,
+    height: 600,
+  },
+  {
+    src: "/LMN_7776.JPG",
+    alt: "Library Resources",
+    caption: "",
+    width: 800,
+    height: 600,
+  },
+  {
+    src: "/LMN_7832.JPG",
+    alt: "Reading Area",
+    caption: "",
+    width: 800,
+    height: 600,
+  },
+  {
+    src: "/LMN_7915.JPG",
+    alt: "Library Facilities",
+    caption: "",
+    width: 800,
+    height: 600,
+  },
+];
+
 export default function Home() {
   const [mounted, setMounted] = useState(false);
 
@@ -72,7 +181,7 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-background">
       {/* Hero Section */}
-      <div className="relative h-[600px] w-full bg-[url('https://images.unsplash.com/photo-1583468982228-19f19164aee3?q=80&w=2662')] bg-cover bg-center">
+      <div className="relative h-[600px] w-full  bg-cover bg-center">
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-black/60">
           <div className="container mx-auto px-4 h-full flex items-center">
             <div className="max-w-3xl">
@@ -161,6 +270,83 @@ export default function Home() {
           </div>
         </div>
       </section>
+      {/* Vision & Mission Section */}
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            {/* Vision Card */}
+            <Card className="bg-primary/5">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <GraduationCap className="h-6 w-6" />
+                  Vision
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div className="space-y-3">
+                  <p className="text-muted-foreground leading-relaxed">
+                    The Central Library envisions providing seamless access to
+                    information in a networked environment and aims to become a
+                    premier Learning Resource Centre, offering state-of-the-art
+                    library resources and services in Agriculture and Allied
+                    Sciences.
+                  </p>
+                  <p className="text-muted-foreground leading-relaxed">
+                    To provide well-equipped and functional spaces where
+                    students can learn independently outside of the classroom.
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Mission Card */}
+            <Card className="bg-primary/5">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <BookOpen className="h-6 w-6" />
+                  Mission
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <ul className="space-y-2 text-muted-foreground">
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary mt-1">•</span>
+                    To develop representative collection for all users
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary mt-1">•</span>
+                    To collect information on the current topic of research
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary mt-1">•</span>
+                    To develop reading habits in students
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary mt-1">•</span>
+                    To support classroom teaching
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary mt-1">•</span>
+                    To develop healthy relationship with college libraries of
+                    the university so that library resource sharing becomes
+                    possible
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary mt-1">•</span>
+                    To use modern tools techniques for collection, storage and
+                    dissemination of information
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary mt-1">•</span>
+                    To access the user needs and accordingly provide necessary
+                    services
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
 
       {/* Library Details Section */}
       <section className="py-20 bg-muted">
@@ -173,17 +359,20 @@ export default function Home() {
             {/* History and Building Info */}
             <div className="prose prose-lg dark:prose-invert max-w-none mb-12">
               <p className="text-muted-foreground">
-                Central Library building of Sardar Vallabhbhai Patel University
-                of Agriculture & Technology, Meerut was inaugurated by Hon'ble
-                Chief Minister, Shri Yogi Aadityanath and agriculture minister
-                of Uttar Pradesh on 13 January, 2021. The Library building of
-                SVPUA&T, Meerut is G+1 type. It is being constructed in 5179.85
-                sqm (GFArea 2775 sqm+First Floor 2404.85sqm) area.
+                The Sardar Vallabhbhai Patel University of Agriculture &
+                Technology of Meerut came into existence on 2nd October, 2000
+                following the notification no. 3204A/12-08-2000-400{96399} dated
+                27.09.2000 by the Government of Uttar Pradesh under the Uttar
+                Pradesh (Krishi Evam Prodyogik Vishwavidyalaya Adhiniyam) 1958
+                (U.P. Act XLV of 1958). The University has unique honour of
+                being called first Agriculture University of the Third
+                Millennium and the 21st century: The university has twelve
+                different colleges viz. College of Agriculture, College of
               </p>
             </div>
 
             {/* Facilities Grid */}
-            <div className="grid md:grid-cols-2 gap-8 mb-12">
+            {/* <div className="grid md:grid-cols-2 gap-8 mb-12">
               <Card>
                 <CardHeader>
                   <CardTitle>Ground Floor Facilities</CardTitle>
@@ -221,7 +410,7 @@ export default function Home() {
                   </ul>
                 </CardContent>
               </Card>
-            </div>
+            </div> */}
 
             {/* Collection Statistics */}
             <Card className="mb-12">
@@ -234,7 +423,7 @@ export default function Home() {
               <CardContent>
                 <div className="grid md:grid-cols-3 gap-8">
                   <div>
-                    <h4 className="font-semibold mb-3">Books (12,827 Total)</h4>
+                    <h4 className="font-semibold mb-3">Books (15,073 Total)</h4>
                     <ul className="space-y-2 text-muted-foreground">
                       <li>Text Books: 7,703</li>
                       <li>Reference Books: 4,248</li>
@@ -343,6 +532,59 @@ export default function Home() {
                   <CardDescription>{resource.description}</CardDescription>
                 </CardHeader>
               </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Photo Gallery Section */}
+      <section className="py-20 bg-muted">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold mb-4">Library Photo Gallery</h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Explore our state-of-the-art library facilities and infrastructure
+              through our photo gallery
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            {galleryImages.map((image, index) => (
+              <Dialog key={index}>
+                <DialogTrigger asChild>
+                  <div className="relative aspect-[4/3] group cursor-pointer overflow-hidden rounded-lg">
+                    <Image
+                      src={image.src}
+                      alt={image.alt}
+                      width={400}
+                      height={300}
+                      className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110"
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 25vw"
+                    />
+                    <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                      <span className="text-white text-sm font-medium px-4 text-center">
+                        {image.caption}
+                      </span>
+                    </div>
+                  </div>
+                </DialogTrigger>
+                <DialogContent className="max-w-5xl w-full h-[85vh] p-0">
+                  <div className="relative w-full h-full">
+                    <Image
+                      src={image.src}
+                      alt={image.alt}
+                      width={1200}
+                      height={900}
+                      className="object-contain w-full h-full"
+                      priority
+                      sizes="90vw"
+                    />
+                    <div className="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4">
+                      <p className="text-center text-lg">{image.caption}</p>
+                    </div>
+                  </div>
+                </DialogContent>
+              </Dialog>
             ))}
           </div>
         </div>
