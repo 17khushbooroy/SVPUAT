@@ -359,15 +359,12 @@ export default function Home() {
             {/* History and Building Info */}
             <div className="prose prose-lg dark:prose-invert max-w-none mb-12">
               <p className="text-muted-foreground">
-                The Sardar Vallabhbhai Patel University of Agriculture &
-                Technology of Meerut came into existence on 2nd October, 2000
-                following the notification no. 3204A/12-08-2000-400{96399} dated
-                27.09.2000 by the Government of Uttar Pradesh under the Uttar
-                Pradesh (Krishi Evam Prodyogik Vishwavidyalaya Adhiniyam) 1958
-                (U.P. Act XLV of 1958). The University has unique honour of
-                being called first Agriculture University of the Third
-                Millennium and the 21st century: The university has twelve
-                different colleges viz. College of Agriculture, College of
+                Central Library building of Sardar Vallabhbhai Patel University
+                of Agriculture & Technology, Meerut was inaugurated by Hon'ble
+                Chief Minister, Shri Yogi Aadityanath and agriculture minister
+                of Uttar Pradesh on 13 December, 2020. The Library building of
+                SVPUA&T, Meerut is G+1 type. It is being constructed in 5179.85
+                sqm (GFArea 2775 sqm+First Floor 2404.85sqm) area.
               </p>
             </div>
 
@@ -464,11 +461,12 @@ export default function Home() {
                 <ul className="space-y-3 text-muted-foreground">
                   <li className="flex items-start gap-2">
                     <span className="text-primary">•</span>
-                    Photocopying Facility @ Rs.0.75/- per page
+                    Photocopying Facility @ Rs.0.75/- per page for Students and
+                    Research Scholars
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-primary">•</span>
-                    E-learning with 13 computers
+                    E-learning facility
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-primary">•</span>
@@ -477,20 +475,20 @@ export default function Home() {
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-primary">•</span>
-                    Centrally Air Conditioned with 24-hour Power Backup
+                    Centrally Air Conditioned, 24-hour Power Backup
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-primary">•</span>
-                    Free Wi-Fi facility for University students
+                    Free Wi-Fi facility for University students and faculties
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-primary">•</span>
                     <div>
                       <strong>Library Hours:</strong>
                       <br />
-                      Regular Days: 24 hours
+                      Regular Days: 7:00AM to 12:00AM
                       <br />
-                      Holidays: 07:00 AM to 03:00 PM
+                      Holidays: 09:00 AM to 02:00 PM
                     </div>
                   </li>
                 </ul>
@@ -533,6 +531,41 @@ export default function Home() {
                 </CardHeader>
               </Card>
             ))}
+          </div>
+          <h2 className="text-3xl font-bold mb-4 mt-8 text-center">
+            More Resources
+          </h2>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 ">
+            <Card>
+              <CardHeader>
+                <CardTitle>E-Books</CardTitle>
+              </CardHeader>
+              <CardContent>Access thousands of digital books</CardContent>
+            </Card>
+            <Card>
+              <CardHeader>
+                <CardTitle>Online Journals</CardTitle>
+              </CardHeader>
+              <CardContent>Browse academic journals</CardContent>
+            </Card>
+            <Card>
+              <CardHeader>
+                <CardTitle>Research Papers</CardTitle>
+              </CardHeader>
+              <CardContent>Download scholarly articles</CardContent>
+            </Card>
+            <Card>
+              <CardHeader>
+                <CardTitle>Free Newspapers</CardTitle>
+              </CardHeader>
+              <CardContent>Access daily news and archives</CardContent>
+            </Card>
+            <Card>
+              <CardHeader>
+                <CardTitle>Free Educational Videos</CardTitle>
+              </CardHeader>
+              <CardContent>Watch educational content and lectures</CardContent>
+            </Card>
           </div>
         </div>
       </section>
@@ -606,19 +639,19 @@ export default function Home() {
                   <p className="flex items-center justify-center gap-2">
                     <span className="font-medium">Email:</span>
                     <a
-                      href="mailto:library@svpuat.ac.in"
+                      href="mailto:library@svpuat.edu.in"
                       className="text-primary hover:underline"
                     >
-                      library@svpuat.ac.in
+                      library@svpuat.edu.in
                     </a>
                   </p>
                   <p className="flex items-center justify-center gap-2">
                     <span className="font-medium">Phone:</span>
                     <a
-                      href="tel:+911234567890"
+                      href="tel:+918874942350"
                       className="text-primary hover:underline"
                     >
-                      +91 123 456 7890
+                      +91 8874942350
                     </a>
                   </p>
                   <p className="text-center text-sm text-muted-foreground">
