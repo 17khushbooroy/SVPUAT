@@ -61,13 +61,6 @@ const digitalResources = [
 
 const galleryImages = [
   {
-    src: "/1.jpg",
-    alt: "Library Building Front View",
-    caption: "",
-    width: 800,
-    height: 600,
-  },
-  {
     src: "/BKB_4321.JPG",
     alt: "Library Interior",
     caption: "SVPUAT Library Main Building",
@@ -219,25 +212,25 @@ export default function Home() {
       </div>
 
       {/* Stats Section */}
-      <section className="py-12 bg-muted">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {stats.map((stat) => (
-              <Card key={stat.name} className="bg-card">
-                <CardContent className="flex items-center gap-4 p-6">
-                  <div className="p-3 rounded-full bg-primary/10">
-                    <stat.icon className="w-6 h-6 text-primary" />
-                  </div>
-                  <div>
-                    <p className="text-3xl font-bold">{stat.value}</p>
-                    <p className="text-sm text-muted-foreground">{stat.name}</p>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* <section className="py-12 bg-muted"> */}
+      {/*   <div className="container mx-auto px-4"> */}
+      {/*     <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"> */}
+      {/*       {stats.map((stat) => ( */}
+      {/*         <Card key={stat.name} className="bg-card"> */}
+      {/*           <CardContent className="flex items-center gap-4 p-6"> */}
+      {/*             <div className="p-3 rounded-full bg-primary/10"> */}
+      {/*               <stat.icon className="w-6 h-6 text-primary" /> */}
+      {/*             </div> */}
+      {/*             <div> */}
+      {/*               <p className="text-3xl font-bold">{stat.value}</p> */}
+      {/*               <p className="text-sm text-muted-foreground">{stat.name}</p> */}
+      {/*             </div> */}
+      {/*           </CardContent> */}
+      {/*         </Card> */}
+      {/*       ))} */}
+      {/*     </div> */}
+      {/*   </div> */}
+      {/* </section> */}
 
       {/* About Section */}
       <section id="about" className="py-20">
@@ -639,10 +632,10 @@ export default function Home() {
                   <p className="flex items-center justify-center gap-2">
                     <span className="font-medium">Email:</span>
                     <a
-                      href="mailto:library@svpuat.edu.in"
+                      href="mailto:oic.library@svpuat.edu.in"
                       className="text-primary hover:underline"
                     >
-                      library@svpuat.edu.in
+                      oic.library@svpuat.edu.in
                     </a>
                   </p>
                   <p className="flex items-center justify-center gap-2">
