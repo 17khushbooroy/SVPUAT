@@ -48,6 +48,11 @@ const digitalResources = [
     url: "https://ieeexplore.ieee.org/Xplore/home.jsp",
   },
   {
+    name: "Shodhsuddhi",
+    description: "Plagrism Chceker",
+    url: "https://shodhshuddhi.inflibnet.ac.in/",
+  },
+  {
     name: "British Council Library",
     description: "Access to British Council Resources",
     url: "http://www.library.britishcouncil.org.ac.in",
