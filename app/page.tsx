@@ -19,6 +19,7 @@ import {
 import { useState, useEffect } from "react";
 import img from "@/public/1.jpg";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
+import heroBg from "@/public/image.jpg";
 
 const stats = [
   { name: "Digital Resources", value: "100,000+", icon: Library },
@@ -61,6 +62,28 @@ const digitalResources = [
     name: "NDL",
     description: "National Digital Library",
     url: "https://ndl.iitkgp.ac.in",
+  },
+  {
+    name: "JGATE",
+    description:
+      "J-Gate is an electronic gateway to global e-journal literature",
+    url: "https://www.jgatenext.com/",
+  },
+  {
+    name: "KrishiKosh",
+    description:
+      "Institutional Repository of Indian National Agricultural Research System",
+    url: "https://krishikosh.egranth.ac.in/home",
+  },
+  {
+    name: "Shodhganga",
+    description: "A reservoir of Indian theses @ INFLIBNET",
+    url: "https://shodhganga.inflibnet.ac.in:8443/jspui/",
+  },
+  {
+    name: "IndiaStatAgri",
+    description: "India's most comprehensive agricultural statistics database",
+    url: "https://www.indiastatagri.com/",
   },
 ];
 
@@ -179,20 +202,27 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-background">
       {/* Hero Section */}
-      <div className="relative h-[600px] w-full  bg-cover bg-center">
-        <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-black/60">
-          <div className="container mx-auto px-4 h-full flex items-center">
+      <div className="relative h-[600px] w-full">
+        <Image
+          src={heroBg}
+          alt="Library Background"
+          fill
+          priority
+          className="object-cover brightness-50 "
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/70 to-black/60">
+          <div className="container mx-auto px-4 h-full flex items-center relative z-10">
             <div className="max-w-3xl">
-              <div className="bg-primary/10 text-primary px-4 py-2 rounded-full inline-flex items-center gap-2 mb-6 backdrop-blur-sm">
+              <div className="bg-primary/20 text-primary px-4 py-2 rounded-full inline-flex items-center gap-2 mb-6 backdrop-blur-sm border border-primary/10">
                 <BookOpen className="w-4 h-4" />
                 <span className="text-sm font-medium">
                   Digital Library Portal
                 </span>
               </div>
-              <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
+              <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight drop-shadow-lg">
                 Welcome to SVPUAT Digital Library
               </h1>
-              <p className="text-lg md:text-xl text-white/90 mb-8">
+              <p className="text-lg md:text-xl text-white mb-8 drop-shadow-md">
                 Discover a world of knowledge with our comprehensive digital
                 resources and academic collections.
               </p>
@@ -206,7 +236,7 @@ export default function Home() {
                 <Button
                   size="lg"
                   variant="outline"
-                  className="rounded-full border-white/20 text-black dark:text-white hover:bg-white/10"
+                  className="rounded-full border-white/30 text-black dark:text-white hover:bg-white/10 backdrop-blur-sm"
                 >
                   Learn More
                 </Button>
@@ -540,24 +570,37 @@ export default function Home() {
               </CardHeader>
               <CardContent>Access thousands of digital books</CardContent>
             </Card>
+
             <Card>
               <CardHeader>
                 <CardTitle>Online Journals</CardTitle>
               </CardHeader>
               <CardContent>Browse academic journals</CardContent>
             </Card>
-            <Card>
-              <CardHeader>
-                <CardTitle>Research Papers</CardTitle>
-              </CardHeader>
-              <CardContent>Download scholarly articles</CardContent>
-            </Card>
-            <Card>
-              <CardHeader>
-                <CardTitle>Free Newspapers</CardTitle>
-              </CardHeader>
-              <CardContent>Access daily news and archives</CardContent>
-            </Card>
+            <a
+              href="https://scholar.google.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Card>
+                <CardHeader>
+                  <CardTitle>Research Papers</CardTitle>
+                </CardHeader>
+                <CardContent>Download scholarly articles</CardContent>
+              </Card>
+            </a>
+            <a
+              href="https://www.dailyepaper.in/daily-news/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Card>
+                <CardHeader>
+                  <CardTitle>Free Newspapers</CardTitle>
+                </CardHeader>
+                <CardContent>Access daily news and archives</CardContent>
+              </Card>
+            </a>
             <Card>
               <CardHeader>
                 <CardTitle>Free Educational Videos</CardTitle>
