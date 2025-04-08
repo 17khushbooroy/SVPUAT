@@ -17,7 +17,7 @@ import {
   CardContent,
 } from "@/components/ui/card";
 import { useState, useEffect } from "react";
-import img from "@/public/1.jpg";
+import img from "@/public/1.jpeg";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import heroBg from "@/public/image.jpg";
 
