@@ -9,9 +9,11 @@ import Image from "next/image";
 import img from "@/public/logo_ne.png";
 import { useState, useEffect } from "react";
 import { Input } from "./ui/input";
+import { School } from 'lucide-react';
 
 const navigation = [
   { name: "Home", href: "/" },
+  { name: "Institute Repository", href: "http://172.105.56.86:4000/home" },
   {
     name: "Institute",
     items: [

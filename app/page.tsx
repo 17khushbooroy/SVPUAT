@@ -17,7 +17,7 @@ import {
   CardContent,
 } from "@/components/ui/card";
 import { useState, useEffect } from "react";
-import img from "@/public/1.jpg";
+import img from "@/public/1.jpeg";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import heroBg from "@/public/image.jpg";
 
@@ -81,9 +81,9 @@ const digitalResources = [
     url: "https://shodhganga.inflibnet.ac.in:8443/jspui/",
   },
   {
-    name: "IndiaStatAgri",
-    description: "India's most comprehensive agricultural statistics database",
-    url: "https://www.indiastatagri.com/",
+    name: "ICAR Library",
+    description: " ICAR-Indian Agricultural Research Institute. Agricultural Research can shape the future of India.",
+    url: "https://lib.icar.gov.in/",
   },
 ];
 
